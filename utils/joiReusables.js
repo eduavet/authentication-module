@@ -19,7 +19,7 @@ joiReusables.token = {
 joiReusables.user = {
   schema: {
     username: Joi.string().required(),
-    expiring_at: Joi.string().required(),
+    expiring_at: Joi.date().required(),
   },
   failAction: joiReusables.failAction,
 };
